@@ -9,6 +9,10 @@ import LifecycleEx5 from './example/R008_LifecycleEx';
 import Es6 from './example/R009_LifecycleEx';
 import Variable from './example/R010_Variable';
 import SpreadOperator from './example/R011_SpreadOperator';
+import ClassPrototype from './example/R012_Class&Prototype';
+import ArrowFunction from './example/R013_ArrowFunction';
+import ForEach from './example/R014_ForEach';
+import Map from './example/R015_Map';
 function App() {
   return (
     <div>
@@ -20,7 +24,11 @@ function App() {
       {/* <LifecycleEx5 prop_value = 'FromApp.js'/> */}
       {/* <Es6/> */}
       {/* <Variable/> */}
-      <SpreadOperator/>
+      {/* <SpreadOperator/> */}
+      {/* <ClassPrototype/> */}
+      {/* <ArrowFunction/> */}
+      {/* <ForEach/> */}
+      <Map/>
     </div>
   );
 }
