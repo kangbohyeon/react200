@@ -18,11 +18,17 @@ import Props from './example/R017_Props';
 import PropsDatatype from './example/R018_PropsDatatype';
 import PropsBoolean from './example/R019_PropsBoolean';
 import PropsObjVal from './example/R020_PropsObjVal';
+import PropsRequired from './example/R021_PropsRequired';
+import PropsDefault from './example/R022_PropsDefault';
+import PropsNode from './example/R023_PropsNode';
+import ReactState from './example/R024_ReactState';
+import SetState from './example/R025_SetState';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
+      <SetState/>
       {/* <ImportConponent></ImportConponent> */}
       {/* <LifecycleEx></LifecycleEx> */}
       {/* <LifecycleEx2></LifecycleEx2> */}
@@ -46,7 +52,12 @@ function App() {
       /> */}
       {/* <PropsBoolean BooleanTrueFalse ={false}/>
       <PropsBoolean BooleanTrueFalse/> */}
-      <PropsObjVal Object ={{react:"리액트",twohundred:"200"}}/>
+      {/* <PropsObjVal Object ={{react:"리액트",twohundred:"200"}}/> */}
+      {/* <PropsDefault ReactNumber={200}/> */}
+      {/* <PropsNode>
+        <span>node from App.js</span>
+      </PropsNode> */}
+      {/* <ReactState reactString={"react"}/> */}
     </div>
   );
 }
