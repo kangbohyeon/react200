@@ -23,12 +23,20 @@ import PropsDefault from './example/R022_PropsDefault';
 import PropsNode from './example/R023_PropsNode';
 import ReactState from './example/R024_ReactState';
 import SetState from './example/R025_SetState';
+import ForceUpdate from './example/R026_ForceUpdate';
+import ComponentClass from './example/R027_ComponentClass';
+import PureComponentClass from './example/R028_PureComponentClass';
+import ShallowEqual from './example/R029_ShallowEqual';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <SetState/>
+      {/* <PureComponentClass/> */}
+      <ShallowEqual/>
+      {/* <ForceUpdate/> */}
+      {/* <ComponentClass/> */}
+      {/* <SetState/> */}
       {/* <ImportConponent></ImportConponent> */}
       {/* <LifecycleEx></LifecycleEx> */}
       {/* <LifecycleEx2></LifecycleEx2> */}
