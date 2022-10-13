@@ -27,13 +27,26 @@ import ForceUpdate from './example/R026_ForceUpdate';
 import ComponentClass from './example/R027_ComponentClass';
 import PureComponentClass from './example/R028_PureComponentClass';
 import ShallowEqual from './example/R029_ShallowEqual';
+import FunctionComponent from './example/R030_FunctionComponent';
+import ReactHook from './example/R031_ReactHook';
+import Fragments from './example/R032_Fragments';
+import ReturnMap from './example/R033_ReturnMap';
+import 'bootstrap/dist/css/bootstrap.css'
+import ReactstrapAlerts from './example/R034_ReactstrapAlerts';
+import ReactstrapBadges from './example/R035_ReactstrapBadges';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
+      <ReactstrapBadges />
+      {/* <ReactstrapAlerts/> */}
+      {/* <ReturnMap/> */}
+      {/* <Fragments/> */}
+      {/* <ReactHook content={'abc'} /> */}
+      {/* <FunctionComponent contents="[this is functioncomponent ]"/> */}
+      {/* <ShallowEqual/> */}
       {/* <PureComponentClass/> */}
-      <ShallowEqual/>
       {/* <ForceUpdate/> */}
       {/* <ComponentClass/> */}
       {/* <SetState/> */}
