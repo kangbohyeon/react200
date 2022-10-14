@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import ImportConponent from './example/R003_ImportConponent';
 import LifecycleEx from './example/R004_LifecycleEx'
 import LifecycleEx2 from './example/R005_LifecycleEx';
@@ -31,15 +32,24 @@ import FunctionComponent from './example/R030_FunctionComponent';
 import ReactHook from './example/R031_ReactHook';
 import Fragments from './example/R032_Fragments';
 import ReturnMap from './example/R033_ReturnMap';
-import 'bootstrap/dist/css/bootstrap.css'
 import ReactstrapAlerts from './example/R034_ReactstrapAlerts';
 import ReactstrapBadges from './example/R035_ReactstrapBadges';
+import ReactstrapBreadcrumbs from './example/R036_ReactstrapBreadcrubms';
+import ReactstrapDropdown from './example/R037_ReactstrapDropdown';
+import ReactstrapButtonGroup from './example/R038_ReactstrapButtonGroup';
+import ReactstrapBottons from './example/R039_ReactstrapBottons';
+import ReactstrapCard from './example/R040_reactstrapCard';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ReactstrapBadges />
+      <ReactstrapCard/>
+      {/* <ReactstrapBottons/> */}
+      {/* <ReactstrapButtonGroup/> */}
+      {/* <ReactstrapDropdown/> */}
+      {/* <ReactstrapBreadcrumbs/> */}
+      {/* <ReactstrapBadges /> */}
       {/* <ReactstrapAlerts/> */}
       {/* <ReturnMap/> */}
       {/* <Fragments/> */}
