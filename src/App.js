@@ -39,12 +39,22 @@ import ReactstrapDropdown from './example/R037_ReactstrapDropdown';
 import ReactstrapButtonGroup from './example/R038_ReactstrapButtonGroup';
 import ReactstrapBottons from './example/R039_ReactstrapBottons';
 import ReactstrapCard from './example/R040_reactstrapCard';
+import ReactstrapCarousel from './example/R041_ReactstrapCarousel';
+import ReactstrapCollapse from './example/R042_ReactstrapCollapse';
+import ReactstrapFade from './example/R043_ReactstrapFade';
+import ReactstrapForm from './example/R044_ReactstrapForm';
+import InputGroup from './example/R045_ReactstrapInputGroup';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ReactstrapCard/>
+      <InputGroup/>
+      {/* <ReactstrapForm/> */}
+      {/* <ReactstrapFade/> */}
+      {/* <ReactstrapCollapse/> */}
+      {/* <ReactstrapCarousel/> */}
+      {/* <ReactstrapCard/> */}
       {/* <ReactstrapBottons/> */}
       {/* <ReactstrapButtonGroup/> */}
       {/* <ReactstrapDropdown/> */}
