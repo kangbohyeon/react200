@@ -44,12 +44,22 @@ import ReactstrapCollapse from './example/R042_ReactstrapCollapse';
 import ReactstrapFade from './example/R043_ReactstrapFade';
 import ReactstrapForm from './example/R044_ReactstrapForm';
 import InputGroup from './example/R045_ReactstrapInputGroup';
+import ReactstrapJumbotron from './example/R046_ReactstrapJumbotron';
+import ListGroup from './example/R047_ReactstrapListGroup';
+import Modal from './example/R048_ReactstrapModal';
+import Navbar from './example/R049_ReactstrapNavbar';
+import Pagination from './example/R050_ReactstrapPagination';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <InputGroup/>
+      <Pagination/>
+      {/* <Navbar/> */}
+      {/* <Modal/> */}
+      {/* <ListGroup/> */}
+      {/* <ReactstrapJumbotron/> */}
+      {/* <InputGroup/> */}
       {/* <ReactstrapForm/> */}
       {/* <ReactstrapFade/> */}
       {/* <ReactstrapCollapse/> */}
