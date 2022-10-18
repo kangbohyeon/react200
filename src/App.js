@@ -49,12 +49,22 @@ import ListGroup from './example/R047_ReactstrapListGroup';
 import Modal from './example/R048_ReactstrapModal';
 import Navbar from './example/R049_ReactstrapNavbar';
 import Pagination from './example/R050_ReactstrapPagination';
+import Popover from './example/R051_ReactstrapPopover';
+import Progress from './example/R052_ReactstrapProgress';
+import Spinner from './example/R053_ReactstrapSpinner';
+import Table from './example/R054_ReactstrapTable';
+import Tab from './example/R055_ReactstrapTab';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Pagination/>
+      <Tab/>
+      {/* <Table /> */}
+      {/* <Spinner/> */}
+      {/* <Progress/> */}
+      {/* <Popover/> */}
+      {/* <Pagination/> */}
       {/* <Navbar/> */}
       {/* <Modal/> */}
       {/* <ListGroup/> */}
