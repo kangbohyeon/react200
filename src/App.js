@@ -54,12 +54,22 @@ import Progress from './example/R052_ReactstrapProgress';
 import Spinner from './example/R053_ReactstrapSpinner';
 import Table from './example/R054_ReactstrapTable';
 import Tab from './example/R055_ReactstrapTab';
+import Sweetalert2Basic from './example/R056_Sweetalert2Basic';
+import Sweetalert2Position from './example/R057_Sweetalert2Position';
+import Sweetalert2Confirm from './example/R058_Sweetalert2Confirm';
+import FetchGet from './example/R059_FetchGet';
+import FetchPost from './example/R060_FetchPost';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Tab/>
+      <FetchPost/>
+      {/* <FetchGet/> */}
+      {/* <Sweetalert2Confirm/> */}
+      {/* <Sweetalert2Position/> */}
+      {/* <Sweetalert2Basic/> */}
+      {/* <Tab/> */}
       {/* <Table /> */}
       {/* <Spinner/> */}
       {/* <Progress/> */}
