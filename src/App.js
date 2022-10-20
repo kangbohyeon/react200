@@ -59,12 +59,22 @@ import Sweetalert2Position from './example/R057_Sweetalert2Position';
 import Sweetalert2Confirm from './example/R058_Sweetalert2Confirm';
 import FetchGet from './example/R059_FetchGet';
 import FetchPost from './example/R060_FetchPost';
+import AxiosGet from './example/R061_AxiosGet';
+import AxiosPost from './example/R062_AxiosPost';
+import CallbackFunc from './example/R063_CallbackFunc';
+import Promise from './example/R064_Promise';
+import Promisecatch from './example/R065_Promisecatch';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <FetchPost/>
+      <Promisecatch/>
+      {/* <Promise/> */}
+      {/* <CallbackFunc/> */}
+      {/* <AxiosPost/> */}
+      {/* <AxiosGet/> */}
+      {/* <FetchPost/> */}
       {/* <FetchGet/> */}
       {/* <Sweetalert2Confirm/> */}
       {/* <Sweetalert2Position/> */}
