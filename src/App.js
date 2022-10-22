@@ -64,12 +64,22 @@ import AxiosPost from './example/R062_AxiosPost';
 import CallbackFunc from './example/R063_CallbackFunc';
 import Promise from './example/R064_Promise';
 import Promisecatch from './example/R065_Promisecatch';
+import ReactonClick from './example/R066_onClick';
+import ReactonChange from './example/R067_onChange';
+import ReactonMouseMove from './example/R068_onMouseMove';
+import ReactonMouseOver from './example/R069_onMouseOver';
+import ReactonMouseOut from './example/R070_onMouseOut';
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Promisecatch/>
+      <ReactonMouseOut/>
+      {/* <ReactonMouseOver/> */}
+      {/* <ReactonMouseMove/> */}
+      {/* <ReactonChange/> */}
+      {/* <ReactonClick/> */}
+      {/* <Promisecatch/> */}
       {/* <Promise/> */}
       {/* <CallbackFunc/> */}
       {/* <AxiosPost/> */}
