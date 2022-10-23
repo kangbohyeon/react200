@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import ImportConponent from './example/R003_ImportConponent';
@@ -69,88 +69,115 @@ import ReactonChange from './example/R067_onChange';
 import ReactonMouseMove from './example/R068_onMouseMove';
 import ReactonMouseOver from './example/R069_onMouseOver';
 import ReactonMouseOut from './example/R070_onMouseOut';
-function App() {
-  return (
-    <div>
-      <h1>Start React 200!</h1>
-      <p>CSS 적용하기</p>
-      <ReactonMouseOut/>
-      {/* <ReactonMouseOver/> */}
-      {/* <ReactonMouseMove/> */}
-      {/* <ReactonChange/> */}
-      {/* <ReactonClick/> */}
-      {/* <Promisecatch/> */}
-      {/* <Promise/> */}
-      {/* <CallbackFunc/> */}
-      {/* <AxiosPost/> */}
-      {/* <AxiosGet/> */}
-      {/* <FetchPost/> */}
-      {/* <FetchGet/> */}
-      {/* <Sweetalert2Confirm/> */}
-      {/* <Sweetalert2Position/> */}
-      {/* <Sweetalert2Basic/> */}
-      {/* <Tab/> */}
-      {/* <Table /> */}
-      {/* <Spinner/> */}
-      {/* <Progress/> */}
-      {/* <Popover/> */}
-      {/* <Pagination/> */}
-      {/* <Navbar/> */}
-      {/* <Modal/> */}
-      {/* <ListGroup/> */}
-      {/* <ReactstrapJumbotron/> */}
-      {/* <InputGroup/> */}
-      {/* <ReactstrapForm/> */}
-      {/* <ReactstrapFade/> */}
-      {/* <ReactstrapCollapse/> */}
-      {/* <ReactstrapCarousel/> */}
-      {/* <ReactstrapCard/> */}
-      {/* <ReactstrapBottons/> */}
-      {/* <ReactstrapButtonGroup/> */}
-      {/* <ReactstrapDropdown/> */}
-      {/* <ReactstrapBreadcrumbs/> */}
-      {/* <ReactstrapBadges /> */}
-      {/* <ReactstrapAlerts/> */}
-      {/* <ReturnMap/> */}
-      {/* <Fragments/> */}
-      {/* <ReactHook content={'abc'} /> */}
-      {/* <FunctionComponent contents="[this is functioncomponent ]"/> */}
-      {/* <ShallowEqual/> */}
-      {/* <PureComponentClass/> */}
-      {/* <ForceUpdate/> */}
-      {/* <ComponentClass/> */}
-      {/* <SetState/> */}
-      {/* <ImportConponent></ImportConponent> */}
-      {/* <LifecycleEx></LifecycleEx> */}
-      {/* <LifecycleEx2></LifecycleEx2> */}
-      {/* <LifecycleEx5 prop_value = 'FromApp.js'/> */}
-      {/* <Es6/> */}
-      {/* <Variable/> */}
-      {/* <SpreadOperator/> */}
-      {/* <ClassPrototype/> */}
-      {/* <ArrowFunction/> */}
-      {/* <ForEach/> */}
-      {/* <Map/> */}
-      {/* <Jquery/> */}
-      {/* <Props props_val="THIS IS PROPS"/> */}
-      {/* <PropsDatatype 
-      String = "react"
-      Number={200}
-      Boolean={1==1}
-      Array={[0,1,8]}
-      Object ={{react:"리액트", twohundred:"200"}}
-      Function={console.log("FunctionProps: function!")}
-      /> */}
-      {/* <PropsBoolean BooleanTrueFalse ={false}/>
-      <PropsBoolean BooleanTrueFalse/> */}
-      {/* <PropsObjVal Object ={{react:"리액트",twohundred:"200"}}/> */}
-      {/* <PropsDefault ReactNumber={200}/> */}
-      {/* <PropsNode>
-        <span>node from App.js</span>
-      </PropsNode> */}
-      {/* <ReactState reactString={"react"}/> */}
-    </div>
-  );
+import ReactOnKey from './example/R071_OnKey';
+import ReactonSubmit from './example/R072_onSubmit';
+import ReactRef from './example/R073_ReactRef';
+import ReactCurrying from './example/R074_ReactCurrying';
+import ReactHoc from './example/Hoc/R075_ReactHoc';
+import ContextApi from './example/Context/R076_ContextApi';
+import R077_ContextApi from './example/Context/R077_ContextApi';
+import StrAddButton from './example/StrAddButton';
+class App extends Component{
+  render(){
+    return (
+      <div>
+        <h1>Start React 200!</h1>
+        <span>{this.props.store.getState().data.str}</span><br/>
+        <StrAddButton store={this.props.store}/>
+      </div>
+    );
+  }
 }
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>Start React 200!</h1>
+//       <p>CSS 적용하기</p>
+//       <R077_ContextApi/>
+//       {/* <ContextApi /> */}
+//       {/* <ReactHoc name='React200'/> */}
+//       {/* <ReactCurrying/> */}
+//       {/* <ReactRef/> */}
+//       {/* <ReactonSubmit/> */}
+//       {/* <ReactOnKey/> */}
+//       {/* <ReactonMouseOut/> */}
+//       {/* <ReactonMouseOver/> */}
+//       {/* <ReactonMouseMove/> */}
+//       {/* <ReactonChange/> */}
+//       {/* <ReactonClick/> */}
+//       {/* <Promisecatch/> */}
+//       {/* <Promise/> */}
+//       {/* <CallbackFunc/> */}
+//       {/* <AxiosPost/> */}
+//       {/* <AxiosGet/> */}
+//       {/* <FetchPost/> */}
+//       {/* <FetchGet/> */}
+//       {/* <Sweetalert2Confirm/> */}
+//       {/* <Sweetalert2Position/> */}
+//       {/* <Sweetalert2Basic/> */}
+//       {/* <Tab/> */}
+//       {/* <Table /> */}
+//       {/* <Spinner/> */}
+//       {/* <Progress/> */}
+//       {/* <Popover/> */}
+//       {/* <Pagination/> */}
+//       {/* <Navbar/> */}
+//       {/* <Modal/> */}
+//       {/* <ListGroup/> */}
+//       {/* <ReactstrapJumbotron/> */}
+//       {/* <InputGroup/> */}
+//       {/* <ReactstrapForm/> */}
+//       {/* <ReactstrapFade/> */}
+//       {/* <ReactstrapCollapse/> */}
+//       {/* <ReactstrapCarousel/> */}
+//       {/* <ReactstrapCard/> */}
+//       {/* <ReactstrapBottons/> */}
+//       {/* <ReactstrapButtonGroup/> */}
+//       {/* <ReactstrapDropdown/> */}
+//       {/* <ReactstrapBreadcrumbs/> */}
+//       {/* <ReactstrapBadges /> */}
+//       {/* <ReactstrapAlerts/> */}
+//       {/* <ReturnMap/> */}
+//       {/* <Fragments/> */}
+//       {/* <ReactHook content={'abc'} /> */}
+//       {/* <FunctionComponent contents="[this is functioncomponent ]"/> */}
+//       {/* <ShallowEqual/> */}
+//       {/* <PureComponentClass/> */}
+//       {/* <ForceUpdate/> */}
+//       {/* <ComponentClass/> */}
+//       {/* <SetState/> */}
+//       {/* <ImportConponent></ImportConponent> */}
+//       {/* <LifecycleEx></LifecycleEx> */}
+//       {/* <LifecycleEx2></LifecycleEx2> */}
+//       {/* <LifecycleEx5 prop_value = 'FromApp.js'/> */}
+//       {/* <Es6/> */}
+//       {/* <Variable/> */}
+//       {/* <SpreadOperator/> */}
+//       {/* <ClassPrototype/> */}
+//       {/* <ArrowFunction/> */}
+//       {/* <ForEach/> */}
+//       {/* <Map/> */}
+//       {/* <Jquery/> */}
+//       {/* <Props props_val="THIS IS PROPS"/> */}
+//       {/* <PropsDatatype 
+//       String = "react"
+//       Number={200}
+//       Boolean={1==1}
+//       Array={[0,1,8]}
+//       Object ={{react:"리액트", twohundred:"200"}}
+//       Function={console.log("FunctionProps: function!")}
+//       /> */}
+//       {/* <PropsBoolean BooleanTrueFalse ={false}/>
+//       <PropsBoolean BooleanTrueFalse/> */}
+//       {/* <PropsObjVal Object ={{react:"리액트",twohundred:"200"}}/> */}
+//       {/* <PropsDefault ReactNumber={200}/> */}
+//       {/* <PropsNode>
+//         <span>node from App.js</span>
+//       </PropsNode> */}
+//       {/* <ReactState reactString={"react"}/> */}
+//     </div>
+//   );
+// }
 
 export default App;
