@@ -86,13 +86,23 @@ import { Route } from 'react-router-dom';
 import reactRouter from './R089_reactRouter';
 import reactRouter2 from './R089_reactRouter2';
 import reactRouter3 from './R090_reactRouter';
+import '../css/new.css';
+import HeaderAdmin from './Header/Header admin';
+import Footer from './Footer/Footer';
+import LoginForm from './LoginForm';
+import reactDebounce from './R094_reactDebounce';
+import reactThrottle from './R095_reactThrottle';
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Route exact path='/' component={reactRouter} />
-        <Route exact path='/reactRouter2' component={reactRouter2} />
-        <Route exact path='/reactRouter3' component={reactRouter3} />
+        <HeaderAdmin/>
+        <Route exact path='/' component={LoginForm} />
+        <Route exact path='/Debounce' component={reactDebounce} />
+        <Route exact path='/Throttle' component={reactThrottle} />
+        {/* <Route exact path='/reactRouter2' component={reactRouter2} /> */}
+        {/* <Route exact path='/reactRouter3' component={reactRouter3} /> */}
+        <Footer/>
       </div>
     );
   }
