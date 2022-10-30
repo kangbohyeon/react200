@@ -92,6 +92,8 @@ import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import reactDebounce from './R094_reactDebounce';
 import reactThrottle from './R095_reactThrottle';
+import floatingPopulationList from './Floating_population/floatingPopulationList';
+import rechartsSimpleLineChart from './Floating_population/rechartsSimpleLineChart';
 class App extends Component {
   render() {
     return (
@@ -100,6 +102,8 @@ class App extends Component {
         <Route exact path='/' component={LoginForm} />
         <Route exact path='/Debounce' component={reactDebounce} />
         <Route exact path='/Throttle' component={reactThrottle} />
+        <Route exact path='/floatingPopulationList' component={floatingPopulationList} />
+        <Route exact path='/rechartsSimpleLineChart' component={rechartsSimpleLineChart} />
         {/* <Route exact path='/reactRouter2' component={reactRouter2} /> */}
         {/* <Route exact path='/reactRouter3' component={reactRouter3} /> */}
         <Footer/>

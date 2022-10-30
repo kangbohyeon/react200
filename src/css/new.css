@@ -84,13 +84,13 @@ body{min-width:1280px; }
 .hd_left > li{float: left;  font-size: 15px; line-height: 45px; background: #8e6826; text-align: center; font-weight: 400;; padding: 0 7px 0 30px; cursor: pointer;}
 .hd_left > li b{font-weight: 400; transition:.3s;}
 .hd_left > li:before{display: inline-block; content:''; width: 14px; height: 45px; background: url(../img/layout/htop_icon1.png) center no-repeat; vertical-align: top; margin-right: 11px; transition:.3s;}
-.hd_left > li.my2{width: 87px; text-align: left;}
+.hd_left > li.my2{width: 100px; text-align: left;}
 .hd_left > li.my2:before{background: url(../img/layout/htop_icon2.png) center no-repeat; margin-right: 0;}
 .hd_left > li.my2 > b span{display: inline-block; margin-right: 8px; opacity: 0.8;}
 .hd_left > li > .box0{display: none; position: absolute; left: 0; top: 45px; background: #fff; text-align: left; box-shadow:0px 0px 30px rgba(0,0,0,0.08); z-index: 100; }
 .hd_left > li > .box1{ width: 133px; height: auto; box-sizing: border-box; padding: 14px 0; box-sizing: border-box;}
 .hd_left > li > .box1 ul li a{display: block;font-size: 15px; line-height: 35px; color: #bababa; padding-left: 30px; transition:.3s;}
-.hd_right{float: left; line-height: 45px; height: 45px; font-size: 15px; color: #fff; opacity: 0.8; font-weight: 400;; box-sizing: border-box; padding-left: 25px; opacity: 0.8;}
+.hd_right{float: left;  height: 45px; font-size: 15px; color: #fff; opacity: 0.8; font-weight: 400;; box-sizing: border-box; padding-left: 25px; opacity: 0.8;}
 .hd_left > li > .box2{left: 0; width: 565px; height: 268px; box-sizing: border-box; padding: 39px 47px; text-align: right; padding-right: 57px;}
 .hd_left > li > .box2 ul li{text-align: left;}
 .hd_left > li > .box2 ul li a{overflow: hidden; position: relative; padding-left: 28px; box-sizing: border-box; font-size: 15px; line-height: 35px; color: #787878;}
