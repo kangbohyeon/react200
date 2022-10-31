@@ -17,16 +17,17 @@ export default class rechartsSimpleLineChart extends PureComponent {
             <LineChart
                 width={1000}
                 height={300}
-                data={data}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                data={this.state.append_FPList}
+                margin={{
+                    top: 5, right: 50, left: 20, bottom: 5,
+                }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="군구" /><YAxis />
+                <XAxis dataKey="군구" />
+                <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="유동인구수" stroke="#8884d8"
-                    activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="비유동인구수" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="유동인구수" stroke="#8884d8" />
             </LineChart>
         );
     }

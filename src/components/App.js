@@ -94,19 +94,29 @@ import reactDebounce from './R094_reactDebounce';
 import reactThrottle from './R095_reactThrottle';
 import floatingPopulationList from './Floating_population/floatingPopulationList';
 import rechartsSimpleLineChart from './Floating_population/rechartsSimpleLineChart';
+import floatingPopulationListChart from './Floating_population/floatingPopulationListChart';
+import floatingPopulationAreaChart from './Floating_population/floatingPopulationAreaChart';
+import floatingPopulationBarChart from './Floating_population/floatingPopulationBarChart';
+import floatingPopulationComposedChart from './Floating_population/floatingPopulationComposedChart';
+import floatingPopulationScatterChart from './Floating_population/floatingPopulationScatterChart';
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <HeaderAdmin/>
+        <HeaderAdmin />
         <Route exact path='/' component={LoginForm} />
         <Route exact path='/Debounce' component={reactDebounce} />
         <Route exact path='/Throttle' component={reactThrottle} />
         <Route exact path='/floatingPopulationList' component={floatingPopulationList} />
         <Route exact path='/rechartsSimpleLineChart' component={rechartsSimpleLineChart} />
+        <Route exact path='/floatingPopulationListChart' component={floatingPopulationListChart} />
+        <Route exact path='/floatingPopulationAreaChart' component={floatingPopulationAreaChart} />
+        <Route exact path='/floatingPopulationBarChart' component={floatingPopulationBarChart} />
+        <Route exact path='/floatingPopulationComposedChart' component={floatingPopulationComposedChart} />
+        <Route exact path='/floatingPopulationScatterChart' component={floatingPopulationScatterChart} />
         {/* <Route exact path='/reactRouter2' component={reactRouter2} /> */}
         {/* <Route exact path='/reactRouter3' component={reactRouter3} /> */}
-        <Footer/>
+        <Footer />
       </div>
     );
   }
