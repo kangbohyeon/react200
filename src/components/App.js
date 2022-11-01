@@ -99,6 +99,10 @@ import floatingPopulationAreaChart from './Floating_population/floatingPopulatio
 import floatingPopulationBarChart from './Floating_population/floatingPopulationBarChart';
 import floatingPopulationComposedChart from './Floating_population/floatingPopulationComposedChart';
 import floatingPopulationScatterChart from './Floating_population/floatingPopulationScatterChart';
+import reactProxy from './R109_reactProxy';
+import ApiGetJson from './R110_ApiGetJson';
+
+
 class App extends Component {
   render() {
     return (
@@ -114,6 +118,8 @@ class App extends Component {
         <Route exact path='/floatingPopulationBarChart' component={floatingPopulationBarChart} />
         <Route exact path='/floatingPopulationComposedChart' component={floatingPopulationComposedChart} />
         <Route exact path='/floatingPopulationScatterChart' component={floatingPopulationScatterChart} />
+        <Route exact path='/reactProxy' component={reactProxy} />
+        <Route exact path='/ApiGetJson' component={ApiGetJson} />
         {/* <Route exact path='/reactRouter2' component={reactRouter2} /> */}
         {/* <Route exact path='/reactRouter3' component={reactRouter3} /> */}
         <Footer />
