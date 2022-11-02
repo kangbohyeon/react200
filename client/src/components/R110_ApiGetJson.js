@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class R110_ApiGetJson extends Component {
     componentDidMount = async () => {
         const response = await fetch('/users');
-        const body = await response.json();
-        console.log("body.message : " + body)
+        const body = await response;
+        console.log(response);
         console.log("body.message : " + body.message)
 
     }

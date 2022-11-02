@@ -5,9 +5,9 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// view engine setup
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-
-module.exports = app;
+// module.exports = app;
+const port = process.env.PORT || 5001;
+app.listen(port,() => console.log(`Listening on port ${port}`));
